@@ -1,22 +1,8 @@
 var index = require("../index.js")
-
-  describe('Name', () => {
-    it('returns "Susan"', () => {
-      expect(index.name).toEqual('Susan')
-    })
-  })
-
-
-  describe('Height', () => {
-    it('is less than 40', () => {
-      expect(index.height).toBeLessThan(40)
-    })
-  })
-
-  describe('Message', () => {
-    it('gives the name and height', () => {
-      expect(index.message).toInclude(index.name)
-      expect(index.message).toInclude(index.height)
-    })
-  })
-})
+if (index.name === "Susan") {
+  console.log("Susan")
+} else if (index.height < 40){
+  console.log ("is less than 40")
+} else {
+  console.log(index.message)
+}
